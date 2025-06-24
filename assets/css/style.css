@@ -1,0 +1,770 @@
+/*registrar usuario*/
+body.form-dark {
+    background-color: #1e1e2f;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    padding: 40px;
+}
+ 
+.registro-container {
+    max-width: 500px;
+    margin: auto;
+    background: #2b2b3d;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(91, 134, 229, 0.3);
+}
+ 
+.titulo-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #76e4f7;
+}
+ 
+.formulario-dark label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+ 
+.formulario-dark input[type="text"],
+.formulario-dark input[type="email"],
+.formulario-dark input[type="password"],
+.formulario-dark select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a3a50;
+    color: #f5f5f5;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+ 
+.formulario-dark select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+ 
+.btn-neon {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+ 
+.btn-neon:hover {
+    box-shadow: 0 0 15px #00ffcc, 0 0 40px #00ffcc;
+}
+ 
+.btn-secundario {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #76e4f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.btn-secundario:hover {
+    text-decoration: underline;
+}
+
+
+/*login*/
+.login-body {
+    background: linear-gradient(to right, #f0f2f5, #e0eafc);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ 
+.login-container {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+ 
+.login-title {
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 24px;
+}
+ 
+.mensaje-error {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+ 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+ 
+.login-form label {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+ 
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+ 
+.btn-login {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn-login:hover {
+    background-color: #2980b9;
+}
+ 
+.registro-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+ 
+.registro-link a {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.registro-link a:hover {
+    text-decoration: underline;
+}
+
+
+/*Productos*/
+.body-productos {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.contenedor-productos {
+    max-width: 1100px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    text-align: center;
+    width: 100%;
+}
+ 
+.titulo {
+    margin-top: 0;
+    color: #2c3e50;
+}
+ 
+.subtitulo {
+    margin-bottom: 20px;
+    color: #34495e;
+}
+ 
+.btn-agregar {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+ 
+.btn-agregar:hover {
+    background-color: #1f8f4d;
+}
+ 
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+ 
+.tabla-productos th,
+.tabla-productos td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.tabla-productos th {
+    background-color: #2980b9;
+    color: white;
+}
+ 
+.tabla-productos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+ 
+.img-producto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+ 
+.btn-editar,
+.btn-eliminar {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.btn-editar {
+    background-color: #f39c12;
+}
+ 
+.btn-eliminar {
+    background-color: #e74c3c;
+}
+ 
+.btn-editar:hover {
+    background-color: #d68910;
+}
+ 
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+ 
+.sin-foto {
+    font-style: italic;
+    color: #999;
+}
+ 
+.mensaje-vacio {
+    font-style: italic;
+    color: #555;
+}
+ 
+.acciones-finales {
+    margin-top: 25px;
+}
+ 
+.btn-salir {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.btn-salir:hover {
+    background-color: #71368a;
+}
+
+/*Crear Productos*/
+.body-agregar {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.contenedor-agregar {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    width: 100%;
+}
+ 
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+ 
+.subtitulo {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e;
+    font-weight: bold;
+}
+ 
+.mensaje-error {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.formulario-producto label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+ 
+.formulario-producto input[type="text"],
+.formulario-producto input[type="number"],
+.formulario-producto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+ 
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+ 
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+ 
+.opcion-foto {
+    text-align: center;
+    cursor: pointer;
+    flex: 1 0 120px;
+    max-width: 130px;
+}
+ 
+.opcion-foto input {
+    display: none;
+}
+ 
+.opcion-foto img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s, border-color 0.3s;
+}
+ 
+.opcion-foto input:checked + img,
+.opcion-foto img:hover {
+    border-color: #3498db;
+    transform: scale(1.05);
+}
+ 
+.opcion-foto span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #555;
+}
+ 
+.btn-guardar {
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.btn-guardar:hover {
+    background-color: #219150;
+}
+ 
+.btn-volver {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.btn-volver:hover {
+    text-decoration: underline;
+}
+
+
+/*Panel*/
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+    color: #2c3e50;
+}
+ 
+/* Encabezado */
+.admin-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+ 
+.admin-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+/* Botones principales */
+.admin-controles {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+ 
+.btn-verde {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+ 
+.btn-verde:hover {
+    background-color: #27ae60;
+}
+ 
+.btn-morado {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+ 
+.btn-morado:hover {
+    background-color: #71368a;
+}
+ 
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+ 
+th {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+ 
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+ 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+ 
+/* Estado */
+.estado.activo {
+    color: #2ecc71;
+    font-weight: bold;
+}
+ 
+.estado.inactivo {
+    color: #e74c3c;
+    font-weight: bold;
+}
+ 
+/* Acciones */
+.btn-editar,
+.btn-eliminar {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 3px;
+    display: inline-block;
+}
+ 
+.btn-editar {
+    background-color: #f39c12;
+}
+ 
+.btn-editar:hover {
+    background-color: #e67e22;
+}
+ 
+.btn-eliminar {
+    background-color: #c0392b;
+}
+ 
+.btn-eliminar:hover {
+    background-color: #a93226;
+}
+ 
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+ 
+    .admin-controles {
+        flex-direction: column;
+        width: 100%;
+    }
+ 
+    /*.btn-verde,
+    .btn-morado {
+        width: 100%;
+        text-align: center;
+    }*/
+
+    .btn-verde {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+ 
+.btn-verde:hover {
+    background-color: #27ae60;
+}
+}
+
+
+/*Editar Usuario*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+ 
+.btn-volver {
+    text-decoration: none;
+    color: #8e44ad;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+ 
+.formulario {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+ 
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+ 
+.formulario button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+ 
+.formulario button:hover {
+    background-color: #1f6391;
+}
+
+
+/*Editar Productos*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.contenedor-formulario {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+}
+ 
+h1 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+ 
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+ 
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+ 
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+ 
+.imagen-actual {
+    width: 100px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+ 
+.galeria-stock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+ 
+.opcion-foto {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 120px;
+}
+ 
+.opcion-foto:hover {
+    transform: scale(1.05);
+}
+ 
+.opcion-foto img {
+    width: 80px;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    margin-bottom: 6px;
+}
+ 
+.btn-guardar {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+ 
+.btn-guardar:hover {
+    background-color: #2980b9;
+}
+ 
+.btn-volver {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #8e44ad;
+    font-weight: bold;
+}
